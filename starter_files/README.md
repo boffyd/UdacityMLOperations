@@ -31,10 +31,16 @@ The following image illustrates the proposed architecture for the project.
 This step was not used as the Udacity VM account was used for modelling.
 
 ### AutoML Model
+The intial step included creating a compute cluster using the Standard_DS12_v2 for teh Virtual Machine with 1 as the minimum number of nodes.
+
 The dataset provided, was located from the UCI depository as per the attached link.
 https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
 
-The target variable chosen was 
+The dataset consists of 20 variables including numeric and categorical and one target variable "y" which is a categorical variable for classification indicating whether or not the target applicant was given a loan.
+
+The dataset was loaded into Azure Machine Learning as a tabular dataset.
+
+An experiment was run with Classification, ensuring Explain best model is checked, and the Exit Criteria was changed to reduce the default (3 hours) to 1 and reduce the Concurrency from 
 
 
 ### Deploy the Best Model
