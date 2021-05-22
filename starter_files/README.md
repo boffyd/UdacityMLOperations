@@ -28,7 +28,15 @@ The following image illustrates the proposed architecture for the project.
 
 ## Key Steps
 ### Authentication
+This step was not used as the Udacity VM account was used for modelling.
+
 ### AutoML Model
+The dataset provided, was located from the UCI depository as per the attached link.
+https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
+
+The target variable chosen was 
+
+
 ### Deploy the Best Model
 ### Enable Logging
 ### Swagger Documentation
