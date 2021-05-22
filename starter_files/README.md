@@ -108,6 +108,13 @@ Using the provided jupyter workbook we look to publish a pipeline.  This takes s
 2. Publish the pipeline
 3. Consumep the pipeline endpoint API.
 
+To do this the provided notebook (jupyter was used).
+The modified information for this automated pipeline is
+* URI
+* Dataset
+* Compute Cluster
+* Model Names if appropriate
+
 ### Documentation
 
 
