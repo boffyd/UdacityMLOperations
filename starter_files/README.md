@@ -40,6 +40,9 @@ The dataset consists of 20 variables including numeric (integer and decimal) and
 
 The dataset was loaded into Azure Machine Learning as a tabular dataset.
 
+## Filename 
+AutoMLBankData
+
 ![Screen Shot 2021-05-22 at 4 47 21 pm](https://user-images.githubusercontent.com/72591620/119217411-62be0c80-bb1d-11eb-86c6-57077d0d93d3.png)
 
 ![Screen Shot 2021-05-22 at 5 03 30 pm](https://user-images.githubusercontent.com/72591620/119217758-b16ca600-bb1f-11eb-9536-92de84e25282.png)
