@@ -1,15 +1,41 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
 
-# Your Project Title Here
+# Operationalising Machine Learning
 
-*TODO:* Write an overview to your project.
+This project aims to implement a machine learning pipeline through the following key steps (as illustrated through the Architectural Diagram) to classify a banking data set as provided through the UCI depository for a classification model.
+* Authentication
+* AutoML Model
+* Deploy the Best Model
+* Enable Logging
+* Swagger Documentation
+* Consume Endpoints
+* Create and Publish a pipeline
+* Documentation
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+The following image illustrates the proposed architecture for the project.
+![Screen Shot 2021-05-22 at 4 14 48 pm](https://user-images.githubusercontent.com/72591620/119216745-d9a4d680-bb18-11eb-8dcd-5f071daa4037.png)
+
+* Authentication: Create a Security Protocol within the Azure Workspace
+* AutoML Model: Use AutoML to compare suitable models against the preferred classification metric
+* Deploy the Best Model: Once the best model is selected, it is then deployed
+* Enable Logging: Logging for use and potential errors through out its deployment
+* Swagger Documentation: 
+* Consume Endpoints: 
+* Create and Publish a pipeline: The process is automated using a pipeline.
+* Documentation
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+### Authentication
+### AutoML Model
+### Deploy the Best Model
+### Enable Logging
+### Swagger Documentation
+### Consume Endpoints
+### Create and Publish a pipeline
+### Documentation
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
