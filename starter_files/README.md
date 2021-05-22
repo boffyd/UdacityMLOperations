@@ -36,14 +36,22 @@ The intial step included creating a compute cluster using the Standard_DS12_v2 f
 The dataset provided, was located from the UCI depository as per the attached link.
 https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
 
-The dataset consists of 20 variables including numeric and categorical and one target variable "y" which is a categorical variable for classification indicating whether or not the target applicant was given a loan.
+The dataset consists of 20 variables including numeric (integer and decimal) and categorical (strings) and one target variable "y" which is a categorical variable for classification indicating whether or not the target applicant was given a loan.
 
 The dataset was loaded into Azure Machine Learning as a tabular dataset.
 
-An experiment was run with Classification, ensuring Explain best model is checked, and the Exit Criteria was changed to reduce the default (3 hours) to 1 and reduce the Concurrency from 
+![Screen Shot 2021-05-22 at 4 47 21 pm](https://user-images.githubusercontent.com/72591620/119217411-62be0c80-bb1d-11eb-86c6-57077d0d93d3.png)
 
+An experiment was run with Classification, ensuring Explain best model is checked, and the Exit Criteria was changed to reduce the default (3 hours) to 1 and reduce the Concurrency from default to 5.  
+![Screen Shot 2021-05-22 at 4 50 03 pm](https://user-images.githubusercontent.com/72591620/119217471-c34d4980-bb1d-11eb-93c9-963045469d5f.png)
+
+![Screen Shot 2021-05-22 at 4 51 46 pm](https://user-images.githubusercontent.com/72591620/119217508-00194080-bb1e-11eb-8dc2-c8ff2b15332f.png)
 
 ### Deploy the Best Model
+The AutoML portion was set to run for some time whilst it ran through its process.  The best model was then chosen to deploy.
+
+
+
 ### Enable Logging
 ### Swagger Documentation
 ### Consume Endpoints
