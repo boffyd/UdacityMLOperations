@@ -103,6 +103,11 @@ We then use the same score file and primary key to modify the benchmark.sh file 
 
 
 ### Create and Publish a pipeline
+Using the provided jupyter workbook we look to publish a pipeline.  This takes several steps.
+1. Create the pipeline
+2. Publish the pipeline
+3. Consumep the pipeline endpoint API.
+
 ### Documentation
 
 
@@ -111,3 +116,7 @@ We then use the same score file and primary key to modify the benchmark.sh file 
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+Improvements would be further development of feature engineering, getting more data or potentially using deep learning which was ruled out due to the time involved in running the model.  The insights through Azure Machine Learning Studio indicate that the The model indicates a class imbalance which can be treated by various methods and may improve the model performance.
+
+![Screen Shot 2021-05-22 at 6 34 05 pm](https://user-images.githubusercontent.com/72591620/119220138-4ecdd700-bb2c-11eb-8b60-02d42f3999c4.png)
+
