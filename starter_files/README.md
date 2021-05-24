@@ -78,7 +78,7 @@ This step involves deploying through the selected trained model using Azure Cont
 
 
 ### Enable Logging
-The config.json file is downloaded and installed in the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.
+The config.json file is downloaded from the Azure primary settings for the login/authentication details and is saved into the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.
 
 Using gitbash as a terminal, the modified logs.py file which includes modifications to the original file to enable logging is run.  This triggers an authenticaiton process that is enabled/approved in a web browser.
 
