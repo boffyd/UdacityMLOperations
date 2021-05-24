@@ -15,6 +15,9 @@ This project aims to implement a machine learning pipeline through the following
 
 ## Architectural Diagram
 The following image illustrates the proposed architecture for the project.
+![diagram](images/00-Architecture.png)
+
+
 ![Screen Shot 2021-05-22 at 4 14 48 pm](https://user-images.githubusercontent.com/72591620/119216745-d9a4d680-bb18-11eb-8dcd-5f071daa4037.png)
 
 * Authentication: Create a Security Protocol within the Azure Workspace
