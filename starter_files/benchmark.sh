@@ -9,8 +9,8 @@
 # POST /score HTTP/1.0
 # Content-length: 812
 # Content-type: application/json
-# Authorization: Bearer CXlqi8yJ5x2FMGrqBa0D0ArnKns7cElO
-# Host: http://b71f7f0c-a506-4b31-bd98-6d7bf4317c05.southcentralus.azurecontainer.io/score
+# Authorization: Bearer R8WdZwmU9o7wHGAJ4XrC26Kgx9EuZHAU
+# Host: http://1cd5f764-6d95-4fe9-9705-5de935125391.southcentralus.azurecontainer.io/score
 # User-Agent: ApacheBench/2.3
 # Accept: */*
 #
@@ -70,4 +70,4 @@
 # Total:        114  160  28.0    172     199#
 
 
- ab -n 10 -v 4 -p data.json -T 'application/json' -H 'Authorization: Bearer CXlqi8yJ5x2FMGrqBa0D0ArnKns7cElO' http://b71f7f0c-a506-4b31-bd98-6d7bf4317c05.southcentralus.azurecontainer.io/score
+ ab -n 10 -v 4 -p data.json -T 'application/json' -H 'Authorization: Bearer R8WdZwmU9o7wHGAJ4XrC26Kgx9EuZHAU' http://1cd5f764-6d95-4fe9-9705-5de935125391.southcentralus.azurecontainer.io/score
