@@ -136,7 +136,7 @@ The modified information for this automated pipeline is
 FIG 13-23 - PIPELINES
 
 ## Screen Recording
-https://youtu.be/qB2nwdUW3l8
+https://youtu.be/vyPnRQKSmz8
 
 ## Future Improvement Suggestions
 Improvements would be further development of feature engineering, getting more data or potentially using deep learning which was ruled out due to the time involved in running the model.  The insights through Azure Machine Learning Studio indicate that the The model indicates a class imbalance which can be treated by various methods and may improve the model performance.
