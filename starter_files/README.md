@@ -72,7 +72,7 @@ After selecting the best model, the next step is to deploy the model so that we 
 
 This step involves deploying through the selected trained model using Azure Container Instance (ACI), with authentication enabled.  Deploying the model allows us to access the model enpoint.
 
-![diagram](images/04-Deploy Model ACI.png)
+![diagram](images/04-DeployModelACI.png)
 
 FIG 6 - DEPLOY MODEL ACI
 
@@ -127,13 +127,11 @@ The modified information for this automated pipeline is
 ![diagram](images/13-Pipeline04.png)
 ![diagram](images/14-Pipeline05.png)
 ![diagram](images/15-Pipelines06.png)
-![diagram](images/21 - Jupyter Notebook Widgets.png)
-
-
-![diagram](images/16-RestEndpoint.png)
-![diagram](images/16-RestEndpoint.png)
-![diagram](images/16-RestEndpoint.png)
-![diagram](images/16-RestEndpoint.png)
+![diagram](images/21-JupyterNotebookWidgets.png)
+![diagram](images/21-PipelineEndpointsActive.png)
+![diagram](images/21-PipelineEndpointFinished.png)
+![diagram](images/21-PipelinePublished overview.)
+![diagram](images/21-Published Pipeline Overview2.png)
 
 ## Screen Recording
 https://youtu.be/qB2nwdUW3l8
