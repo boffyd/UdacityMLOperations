@@ -109,9 +109,10 @@ The modified information for this automated pipeline is
 ## Screen Recording
 https://youtu.be/qB2nwdUW3l8
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Future Improvement Suggestions
 Improvements would be further development of feature engineering, getting more data or potentially using deep learning which was ruled out due to the time involved in running the model.  The insights through Azure Machine Learning Studio indicate that the The model indicates a class imbalance which can be treated by various methods and may improve the model performance.
 
 ![diagram](images/17-classbalance.png)
+
+
 
