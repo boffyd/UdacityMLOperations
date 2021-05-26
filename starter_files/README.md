@@ -120,12 +120,19 @@ The modified information for this automated pipeline is
 
 * Dataset
 * Compute Cluster
+* 
 ![diagram](images/10-Pipeline01.png)
 ![diagram](images/11-Pipeline02.png)
 ![diagram](images/12-Pipeline03.png)
 ![diagram](images/13-Pipeline04.png)
 ![diagram](images/14-Pipeline05.png)
 ![diagram](images/15-Pipelines06.png)
+![diagram](images/21 - Jupyter Notebook Widgets.png)
+
+
+![diagram](images/16-RestEndpoint.png)
+![diagram](images/16-RestEndpoint.png)
+![diagram](images/16-RestEndpoint.png)
 ![diagram](images/16-RestEndpoint.png)
 
 ## Screen Recording
