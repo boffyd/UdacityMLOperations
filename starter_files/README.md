@@ -72,7 +72,7 @@ After selecting the best model, the next step is to deploy the model so that we 
 
 This step involves deploying through the selected trained model using Azure Container Instance (ACI), with authentication enabled.  Deploying the model allows us to access the model enpoint.
 
-![diagram](images/04-DeployModel ACI.png)
+![diagram](images/04-Deploy Model ACI.png)
 
 FIG 5 - DEPLOY MODEL ACI
 
