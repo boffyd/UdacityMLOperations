@@ -118,6 +118,7 @@ Using the provided jupyter workbook we look to publish a pipeline.  This takes s
 To do this the provided notebook (jupyter was used).
 The modified information for this automated pipeline is
 
+
 * Dataset
 * Compute Cluster
 ![diagram](images/10-Pipeline01.png)
