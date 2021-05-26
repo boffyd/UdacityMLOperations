@@ -65,18 +65,16 @@ FIG 5 - AUTOML PROCESS COMPLETED - EXPERIMENT COMPLETE
 The best performing model was VOTINGENSEMBLE
 ![diagram](images/04b-AutoMLEnsembleModel.png)
 
-FIG 5 - BEST PERFORMING MODEL
+FIG 6 - BEST PERFORMING MODEL
 
 ### Deploy the Best Model
 After selecting the best model, the next step is to deploy the model so that we can provide an API URL.
 
 This step involves deploying through the selected trained model using Azure Container Instance (ACI), with authentication enabled.  Deploying the model allows us to access the model enpoint.
 
-![diagram](images/06-ApplicationInsightsEnabled.png)
+![diagram](images/04-Deploy Model ACI.png)
 
-FIG 6 - APPLICATIONS INSIGHTS ENABLED
-
-FIG 5 - DEPLOY MODEL ACI
+FIG 6 - DEPLOY MODEL ACI
 
 ### Enable Logging
 The config.json file is downloaded from the Azure primary settings for the login/authentication details and is saved into the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.  The log.py file is changed where the name now reflects the deployed model.
@@ -85,18 +83,18 @@ Using gitbash as a terminal, the modified logs.py file which includes modificati
 
 ![diagram](images/06-ApplicationInsightsEnabled.png)
 
-FIG 6 - APPLICATIONS INSIGHTS ENABLED
+FIG 7 - APPLICATIONS INSIGHTS ENABLED
 
 ![diagram](images/05-logs.png)
 
-FIG 7 - LOGS.PY TERMINAL RUN - LOGS.PY SCRIPT
+FIG 8 - LOGS.PY TERMINAL RUN - LOGS.PY SCRIPT
 
 ### Swagger Documentation
 Once logging is enabled, and the model is deployed, you then go to endpoints and in the details tab download a copy of the Swagger URI to the Swagger folder in the start files script.  At the same time amend the swagger.sh file to change the port number above 9000.  Using gitbash as the terminal swagger.sh was run (bash swagger.sh and in a new terminal python serve.py was run.  Swagger documentation was enabled in the web browser.
 
 ![diagram](images/07-SwaggerDoc.png)
 
-FIG 8 - SWAGGER RUNNING ON LOCALHOST SHOWING HTTP API
+FIG 9 - SWAGGER RUNNING ON LOCALHOST SHOWING HTTP API
 
 ### Consume Endpoints
 In the deploy model, when reviewing the consume tab, we copy the rest endpoint and the primary key (or secondary key) and modify the endpoint.py file located in the starter_files directory.
@@ -104,12 +102,12 @@ In the deploy model, when reviewing the consume tab, we copy the rest endpoint a
 We then look to send through some data through to the scoring uri by running endpoints.py
 ![diagram](images/09-Endpointpy1.png)
 
-FIG 9 - ENDPOINT.PY TERMINAL SCRIPT
+FIG 10 - ENDPOINT.PY TERMINAL SCRIPT
 
 We then use the same score file and primary key to modify the benchmark.sh file and run it.  Modify the lines at the bottom of the code.
 ![diagram](images/08-Benchmark.png)
 
-FIG 10 - BENCHMARK RUNS AGAINST HTTP API
+FIG 11 - BENCHMARK RUNS AGAINST HTTP API
 
 ### Create and Publish a pipeline
 Using the provided jupyter workbook we look to publish a pipeline.  This takes several steps.
