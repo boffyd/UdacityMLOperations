@@ -42,13 +42,16 @@ The dataset was loaded into Azure Machine Learning as a tabular dataset.
 ## Filename 
 BankDataset
 
-![diagram](images/01-Dataset.png)
+![diagram](images/00-RegisteredDatasets.png)
 FIG 2 - CREATE BANK DATASET - REGISTERED DATASETS
 
 ![diagram](images/02-Dataset.png)
 FIG 3 - CREATE BANK DATASET - DATASET EXPLORED
 
 An experiment was run with Classification, ensuring Explain best model is checked, and the Exit Criteria was changed to reduce the default (3 hours) to 1 and reduce the Concurrency from default to 5.  AutoML was left to run.
+
+![diagram](images/01-AutoMLSetup.png)
+FIG 4 - AUTOML PROCESS SETUP
 
 ![diagram](images/03-CompletedExperiment.png)
 FIG 4 - AUTOML PROCESS COMPLETED
