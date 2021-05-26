@@ -13,6 +13,7 @@ This project aims to implement a machine learning pipeline through the following
 ## Architectural Diagram
 The following image illustrates the proposed architecture for the project.
 ![diagram](images/00-Architecture.png)
+FIG 1 - PROJECT ARCHITECTURE
 
 
 * Authentication: Create a Security Protocol within the Azure Workspace
@@ -42,19 +43,20 @@ The dataset was loaded into Azure Machine Learning as a tabular dataset.
 BankDataset
 
 ![diagram](images/01-Dataset.png)
+FIG 2 - CREATE BANK DATASET - REGISTERED DATASETS
 
 ![diagram](images/02-Dataset.png)
-
+FIG 3 - CREATE BANK DATASET - DATASET EXPLORED
 
 An experiment was run with Classification, ensuring Explain best model is checked, and the Exit Criteria was changed to reduce the default (3 hours) to 1 and reduce the Concurrency from default to 5.  AutoML was left to run.
 
 ![diagram](images/03-CompletedExperiment.png)
-
+FIG 4 - AUTOML PROCESS COMPLETED
 
 
 The best performing model was VOTINGENSEMBLE
 ![diagram](images/04b-AutoMLEnsembleModel.png)
-
+FIG 5 - BEST PERFORMING MODEL
 
 ### Deploy the Best Model
 After selecting the best model, the next step is to deploy the model so that we can provide an API URL.
@@ -63,15 +65,17 @@ This step involves deploying through the selected trained model using Azure Cont
 
 ![diagram](images/04b-AutoMLEnsembleModel.png)
 
+
 ### Enable Logging
 The config.json file is downloaded from the Azure primary settings for the login/authentication details and is saved into the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.  The log.py file is changed where the name now reflects the deployed model.
 
 Using gitbash as a terminal, the modified logs.py file which includes modifications to the original file to enable logging is run.  This triggers an authenticaiton process that is enabled/approved in a web browser.
 
 ![diagram](images/05-logs.png)
+FIG 6 - LOGS.PY TERMINAL RUN
 
 ![diagram](images/06-ApplicationInsightsEnabled.png)
-
+FIG 7 - APPLICATIONS INSIGHTS ENABLED
 ### Swagger Documentation
 Once logging is enabled, and the model is deployed, you then go to endpoints and in the details tab download a copy of the Swagger URI to the Swagger folder in the start files script.  At the same time amend the swagger.sh file to change the port number above 9000.  Using gitbash as the terminal swagger.sh was run (bash swagger.sh and in a new terminal python serve.py was run.  Swagger documentation was enabled in the web browser.
 
