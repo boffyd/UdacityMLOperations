@@ -102,7 +102,7 @@ In the deploy model, when reviewing the consume tab, we copy the rest endpoint a
 We then look to send through some data through to the scoring uri by running endpoints.py
 ![diagram](images/09-Endpointpy1.png)
 
-FIG 10 - ENDPOINT.PY TERMINAL SCRIPT
+FIG 11 - ENDPOINT.PY TERMINAL SCRIPT
 
 We then use the same score file and primary key to modify the benchmark.sh file and run it.  Modify the lines at the bottom of the code.
 ![diagram](images/08-Benchmark.png)
