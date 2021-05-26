@@ -74,7 +74,7 @@ This step involves deploying through the selected trained model using Azure Cont
 
 ![diagram](images/04-DeployModelACI.png)
 
-FIG 6 - DEPLOY MODEL ACI
+FIG 7 - DEPLOY MODEL ACI
 
 ### Enable Logging
 The config.json file is downloaded from the Azure primary settings for the login/authentication details and is saved into the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.  The log.py file is changed where the name now reflects the deployed model.
@@ -83,18 +83,18 @@ Using gitbash as a terminal, the modified logs.py file which includes modificati
 
 ![diagram](images/06-ApplicationInsightsEnabled.png)
 
-FIG 7 - APPLICATIONS INSIGHTS ENABLED
+FIG 8 - APPLICATIONS INSIGHTS ENABLED
 
 ![diagram](images/05-logs.png)
 
-FIG 8 - LOGS.PY TERMINAL RUN - LOGS.PY SCRIPT
+FIG 9 - LOGS.PY TERMINAL RUN - LOGS.PY SCRIPT
 
 ### Swagger Documentation
 Once logging is enabled, and the model is deployed, you then go to endpoints and in the details tab download a copy of the Swagger URI to the Swagger folder in the start files script.  At the same time amend the swagger.sh file to change the port number above 9000.  Using gitbash as the terminal swagger.sh was run (bash swagger.sh and in a new terminal python serve.py was run.  Swagger documentation was enabled in the web browser.
 
 ![diagram](images/07-SwaggerDoc.png)
 
-FIG 9 - SWAGGER RUNNING ON LOCALHOST SHOWING HTTP API
+FIG 10 - SWAGGER RUNNING ON LOCALHOST SHOWING HTTP API
 
 ### Consume Endpoints
 In the deploy model, when reviewing the consume tab, we copy the rest endpoint and the primary key (or secondary key) and modify the endpoint.py file located in the starter_files directory.
@@ -107,7 +107,7 @@ FIG 10 - ENDPOINT.PY TERMINAL SCRIPT
 We then use the same score file and primary key to modify the benchmark.sh file and run it.  Modify the lines at the bottom of the code.
 ![diagram](images/08-Benchmark.png)
 
-FIG 11 - BENCHMARK RUNS AGAINST HTTP API
+FIG 12 - BENCHMARK RUNS AGAINST HTTP API
 
 ### Create and Publish a pipeline
 Using the provided jupyter workbook we look to publish a pipeline.  This takes several steps.
@@ -130,8 +130,10 @@ The modified information for this automated pipeline is
 ![diagram](images/21-JupyterNotebookWidgets.png)
 ![diagram](images/21-PipelineEndpointsActive.png)
 ![diagram](images/21-PipelineEndpointFinished.png)
-![diagram](images/21-PipelinePublished overview.)
-![diagram](images/21-Published Pipeline Overview2.png)
+![diagram](images/21-PipelinePublishedoverview.png)
+![diagram](images/21-PublishedPipelineOverview2.png)
+
+FIG 13-23 - PIPELINES
 
 ## Screen Recording
 https://youtu.be/qB2nwdUW3l8
@@ -141,6 +143,6 @@ Improvements would be further development of feature engineering, getting more d
 
 ![diagram](images/17-classbalance.png)
 
-
+FIG 24 - CLASS IMBALANCE
 
 
