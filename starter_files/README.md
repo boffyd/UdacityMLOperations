@@ -83,7 +83,7 @@ FIG 7 - DEPLOY MODEL ACI
 ### Enable Logging
 After deploying a model, enabling logging allows information into how the deployed service is behaving and helps determine irregularites in deployment/production.  Azure Applications Insights is the proposed method used to determine these irregularities.  To execute this the config.json file is downloaded from the Azure primary settings for the login/authentication details and is saved into the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.  The log.py file is changed where the name now reflects the deployed model.
 
-To do so we have a logs.py python script that we can serve using gitbash as a terminal.  In this project this includes some minor modifcations to correctly enable logging.  This triggers an authenticaiton process that is enabled/approved in a web browser and confirmed through Applications Insights.
+To do so we have a logs.py python script that we can serve using gitbash as a terminal.  In this project this includes some minor modifcations to correctly enable logging (i.e. # enable application insight service.update(enable_app_insights = True).  This triggers an authenticaiton process that is enabled/approved in a web browser and confirmed through Applications Insights.
 
 ![diagram](images/06-ApplicationInsightsEnabled.png)
 
@@ -101,6 +101,10 @@ Once logging is enabled, and the model is deployed, you then go to endpoints and
 FIG 10 - SWAGGER RUNNING ON LOCALHOST SHOWING HTTP API
 
 ### Consume Endpoints
+Creating a benchmark creates a baseline performance of the model.  The intent of this is to evaluate ongoing performance above what we would look for in anomalies.  Key questions regarding how well the model is performing allow the Machine Learning Engineer to whether fine tuning or modification to the original model is required.
+
+Swagger is offered by Azure Machine Learning as part of its Endpoint offer to build, document and consume HTTP API's, which is a understanding tool to help understand what the API accepts including inputs (GET Requests) and outputs (POST Requests) as well as what the endpoints are.  This is important in larger teams, where its easier to communicate what the inputs the model is expecting for ideal performance and would be used if during interogation of the log input the model is crashing, perhaps the inputs are not compatible.  Simiarly this faciliates quicker understanding of what the proposed outputs are.
+
 In the deploy model, when reviewing the consume tab, we copy the rest endpoint and the primary key (or secondary key) and modify the endpoint.py file located in the starter_files directory.
 
 We then look to send through some data through to the scoring uri by running endpoints.py
