@@ -31,7 +31,11 @@ FIG 1 - PROJECT ARCHITECTURE
 This step was not used as the Udacity VM account was used for modelling.
 
 ### AutoML Model
-The intial step included creating a compute cluster using the Standard_DS12_v2 for teh Virtual Machine with 1 as the minimum number of nodes.
+The intent of AutoML is to essentially automate Machine Learning activities.  This is provided through Azure as a predefined process, and allows the user to select between classification and regression as an output.  To simply activities as well you can choose whether or not to include deep learning and or what models can be excluded from the process.
+
+The first steps required to execute this in Azure Machine learning is to provide a compute cluster, the computing engine that provides the capabilty to analyse the dataset through a series of typical machine learning process's.  For this project, the intial step was to create a compute cluster using the Standard_DS12_v2 (virtual machine which provides scalability depending on the criticality/difficulty of the problem) as per the assignments criteria.
+
+Given there is a cost associated with this, there is a watchout for users and included in this assignment to provide a suitable time out period and max amount of compute power to allocate.  If left unchecked, this could be an expensive assignment.  From here the data set is provided.  This can be linked from a URL (as per the Jupyter notebook) or uploaded as a CSV which was the case for simplicity for this project.
 
 The dataset provided, was located from the UCI depository as per the attached link.
 https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
