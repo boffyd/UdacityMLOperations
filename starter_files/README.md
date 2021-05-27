@@ -72,18 +72,18 @@ The best performing model was VOTINGENSEMBLE
 FIG 6 - BEST PERFORMING MODEL
 
 ### Deploy the Best Model
-After selecting the best model, the next step is to deploy the model so that we can provide an API URL.
+An Machine Learning Engineer links datascience (insights) into actionable outcomes.  A key component of this is determining when and just as importantly how to ship a model into production.  After developing and fine tuning the model, the best model should selected for deployment into production.  After selecting the best model, the next step is to deploy the model so that we can provide an API URL.  This step also requires consideration into authentication types to ensure security.  This includes call durations as well as errors to help determine whether or not you have applied the correct resources to the model.
 
-This step involves deploying through the selected trained model using Azure Container Instance (ACI), with authentication enabled.  Deploying the model allows us to access the model enpoint.
+To do this through Azure Machine Learning, through the Model tab, you find the best previously trained model and deploy it with the appropriate authentication.  In the case of this project the authentication uses Azure Container Instance (ACI), with authentication enabled.  Deploying the model allows us to access the model enpoint.
 
 ![diagram](images/04-DeployModelACI.png)
 
 FIG 7 - DEPLOY MODEL ACI
 
 ### Enable Logging
-The config.json file is downloaded from the Azure primary settings for the login/authentication details and is saved into the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.  The log.py file is changed where the name now reflects the deployed model.
+After deploying a model, enabling logging allows information into how the deployed service is behaving and helps determine irregularites in deployment/production.  Azure Applications Insights is the proposed method used to determine these irregularities.  To execute this the config.json file is downloaded from the Azure primary settings for the login/authentication details and is saved into the working directory to provide the appropriate subsription, resource ids etc for the work space which is used for logging.  The log.py file is changed where the name now reflects the deployed model.
 
-Using gitbash as a terminal, the modified logs.py file which includes modifications to the original file to enable logging is run.  This triggers an authenticaiton process that is enabled/approved in a web browser.
+To do so we have a logs.py python script that we can serve using gitbash as a terminal.  In this project this includes some minor modifcations to correctly enable logging.  This triggers an authenticaiton process that is enabled/approved in a web browser and confirmed through Applications Insights.
 
 ![diagram](images/06-ApplicationInsightsEnabled.png)
 
