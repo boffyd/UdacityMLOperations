@@ -105,30 +105,32 @@ Creating a benchmark creates a baseline performance of the model.  The intent of
 
 Swagger is offered by Azure Machine Learning as part of its Endpoint offer to build, document and consume HTTP API's, which is a understanding tool to help understand what the API accepts including inputs (GET Requests) and outputs (POST Requests) as well as what the endpoints are.  This is important in larger teams, where its easier to communicate what the inputs the model is expecting for ideal performance and would be used if during interogation of the log input the model is crashing, perhaps the inputs are not compatible.  Simiarly this faciliates quicker understanding of what the proposed outputs are.
 
-In the deploy model, when reviewing the consume tab, we copy the rest endpoint and the primary key (or secondary key) and modify the endpoint.py file located in the starter_files directory.
+To provide access to a deployed model the endpoint section provide access to a Rest Endpoint URL, including relevant Authentication.  In Azure Machine learinn, in the deploy model, when reviewing the consume tab, we copy the rest endpoint and the primary key (or secondary key) and modify the endpoint.py file located in the starter_files directory.
 
-We then look to send through some data through to the scoring uri by running endpoints.py
+This endpoint includes a coring uri and authentication.  Copying these across to the endpoints.py file includes 2 sets of data to score (in the same format as defined by the swagger uri).  From here we are going to pass the new data through to the scoring URI to see how it performs.  This will be in json format and will provide the response as defined by the model, which will be printed.
+
 ![diagram](images/09-Endpointpy1.png)
 
 FIG 11 - ENDPOINT.PY TERMINAL SCRIPT
 
-We then use the same score file and primary key to modify the benchmark.sh file and run it.  Modify the lines at the bottom of the code.
+We then use the same score file and primary key to modify the benchmark.sh file to baseline the model (benchmark), to determine future performance.  This is benchmarking is the average response time, which is important as Azure will time out if the call time takes too long.
+
 ![diagram](images/08-Benchmark.png)
 
 FIG 12 - BENCHMARK RUNS AGAINST HTTP API
 
 ### Create and Publish a pipeline
+A pipeline is a method of provding capability to automate some or all of the above commands in one call.  The script (Jupyter) includes setting up and checking of workspaces, environments and suitable compute clusters.  Access the data and treats it accordingly and passes it through AutoML processes.  Publishing the pipeline allows external services to interact with them.  This process has been managed through the python SDK, but is also reflected in the Pipeline tab within Azure.  The other advantage of pipelines is that they can be set for recurring events such as re-running models based on new data.
+
+When a pipeline is published, as per the above steps an HTTP endpoint becomes available to make the endpoint accessible to third parties for call requests.  This can be done in both the Machine Learning Studio and also the Python SDK.
+
 Using the provided jupyter workbook we look to publish a pipeline.  This takes several steps.
 1. Create the pipeline
 2. Publish the pipeline
 3. Consumep the pipeline endpoint API.
 
-To do this the provided notebook (jupyter was used).
-The modified information for this automated pipeline is
+The below images include development through the Python SDK including using widgets to show run details, and verification of the Pipeline Endpoints.
 
-* Dataset
-* Compute Cluster
-* 
 ![diagram](images/10-Pipeline01.png)
 ![diagram](images/11-Pipeline02.png)
 ![diagram](images/12-Pipeline03.png)
@@ -141,7 +143,7 @@ The modified information for this automated pipeline is
 ![diagram](images/21-PipelinePublishedoverview.png)
 ![diagram](images/21-PublishedPipelineOverview2.png)
 
-FIG 13-23 - PIPELINES
+FIG 13-23 - PIPELINES AND WORK FLOW.
 
 ## Screen Recording
 https://youtu.be/vyPnRQKSmz8
