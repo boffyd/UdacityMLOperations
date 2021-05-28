@@ -153,7 +153,7 @@ FIG 17 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/15-Pipelines06.png)
 
-FIG 18 - 
+FIG 18 - AUTOML PIPELINE OVERVIEW
 
 ![diagram](images/21-JupyterNotebookWidgets.png)
 
