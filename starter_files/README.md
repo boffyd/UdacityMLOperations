@@ -153,23 +153,23 @@ FIG 17 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/15-Pipelines06.png)
 
-FIG 17 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
+FIG 18 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/21-JupyterNotebookWidgets.png)
 
-FIG 18 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
+FIG 19 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/21-PipelineEndpointsActive.png)
 
-FIG 19 - 
+FIG 20 - 
 
 ![diagram](images/21-PipelineEndpointFinished.png)
 
-FIG 20 - 
+FIG 21 - 
 
 ![diagram](images/21-PipelinePublishedoverview.png)
 
-FIG 21 - 
+FIG 22 - 
 
 ![diagram](images/21-PublishedPipelineOverview2.png)
 
