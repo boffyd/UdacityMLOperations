@@ -169,11 +169,11 @@ FIG 21 - PIPELINE ENDPOINTS FINISHED
 
 ![diagram](images/21-PipelinePublishedoverview.png)
 
-FIG 22 - PIPELINE PUBLISH OVERVIEW
+FIG 22 - PIPELINE PUBLISH OVERVIEW - ACTIVE ENDPOINT REST
 
 ![diagram](images/21-PublishedPipelineOverview2.png)
 
-FIG 23 - PIPELINE PUBLISH OVERVIEW 2 - ACTIVE ENDPOINT REST
+FIG 23 - PIPELINE PUBLISH OVERVIEW 2
 
 ## Screen Recording
 https://youtu.be/vyPnRQKSmz8
