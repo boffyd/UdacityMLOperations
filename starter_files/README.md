@@ -145,8 +145,11 @@ FIG 15 - COMPLETED PIPELINES
 
 ![diagram](images/13-Pipeline04.png)
 
-
 FIG 16 - PYTHON SDK PIPELINE WIDGET OVERVIEW
+
+![diagram](images/15-Pipelines05.png)
+
+FIG 17 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/15-Pipelines06.png)
 
@@ -154,7 +157,7 @@ FIG 17 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/21-JupyterNotebookWidgets.png)
 
-FIG 18 - 
+FIG 18 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/21-PipelineEndpointsActive.png)
 
