@@ -153,27 +153,27 @@ FIG 17 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
 
 ![diagram](images/15-Pipelines06.png)
 
-FIG 18 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
+FIG 18 - 
 
 ![diagram](images/21-JupyterNotebookWidgets.png)
 
-FIG 19 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
+FIG 19 - PYTHON SDK NOTEBOOK WIDGET RUN OVERVIEW
 
 ![diagram](images/21-PipelineEndpointsActive.png)
 
-FIG 20 - 
+FIG 20 - PIPELINE ENDPOINTS ACTIVE
 
 ![diagram](images/21-PipelineEndpointFinished.png)
 
-FIG 21 - 
+FIG 21 - PIPELINE ENDPOINTS FINISHED
 
 ![diagram](images/21-PipelinePublishedoverview.png)
 
-FIG 22 - 
+FIG 22 - PIPELINE PUBLISH OVERVIEW
 
 ![diagram](images/21-PublishedPipelineOverview2.png)
 
-FIG 13-23 - PIPELINES AND WORK FLOW.
+FIG 23 - PIPELINE PUBLISH OVERVIEW 2 - ACTIVE ENDPOINT REST
 
 ## Screen Recording
 https://youtu.be/vyPnRQKSmz8
