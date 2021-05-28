@@ -132,15 +132,41 @@ Using the provided jupyter workbook we look to publish a pipeline.  This takes s
 The below images include development through the Python SDK including using widgets to show run details, and verification of the Pipeline Endpoints.
 
 ![diagram](images/10-Pipeline01.png)
+
+FIG 13 - ACTIVE PIPELINES
+
 ![diagram](images/11-Pipeline02.png)
+
+FIG 14 - PIPELINE RUN OVERVIEW (EXPERIMENTS)
+
 ![diagram](images/12-Pipeline03.png)
+
+FIG 15 - PYTHON SDK PIPELINE WIDGET OVERVIEW
+
 ![diagram](images/13-Pipeline04.png)
-![diagram](images/14-Pipeline05.png)
+
+FIG 16 - PYTHON SKD CONFUSION MATRIX AND PUBLISH
+
 ![diagram](images/15-Pipelines06.png)
+
+FIG 17 - 
+
 ![diagram](images/21-JupyterNotebookWidgets.png)
+
+FIG 18 - 
+
 ![diagram](images/21-PipelineEndpointsActive.png)
+
+FIG 19 - 
+
 ![diagram](images/21-PipelineEndpointFinished.png)
+
+FIG 20 - 
+
 ![diagram](images/21-PipelinePublishedoverview.png)
+
+FIG 21 - 
+
 ![diagram](images/21-PublishedPipelineOverview2.png)
 
 FIG 13-23 - PIPELINES AND WORK FLOW.
